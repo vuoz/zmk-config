@@ -10,17 +10,17 @@
 
 / {
     behaviors {
-        custom_dot_to_colon: behavior {
-            compatible = "zmk,behavior-macro";
+        custom_shift_dot_to_colon: behavior {
+            compatible = "zmk,behavior-mod-tap";
             label = "DOT_TO_COLON";
             #binding-cells = <0>;
-            bindings = <
-                &kp DOT &kp COLON
-            >;
-            when-held = <&kp COLON>;
+            bindings = <&kp DOT>;
+            hold-trigger-key-positions = <0>;
+            hold-bindings = <&kp COLON>;
         };
     };
 };
+
 
 / {
         keymap {
