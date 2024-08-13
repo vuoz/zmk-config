@@ -9,12 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    macros {
-        backslash_macro: macro_0 {
-            label = "Backslash Macro";
-            bindings = <&kp RALT>, <&kp MINUS>;
-        };
-    };
+
 };
 
 
@@ -22,6 +17,12 @@
         keymap {
                 compatible = "zmk,keymap";
 	
+        macros {
+  		backslash_macro: macro_0 {
+            	label = "Backslash Macro";
+            	bindings = <&kp RALT>, <&kp MINUS>;
+        };
+    };
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
