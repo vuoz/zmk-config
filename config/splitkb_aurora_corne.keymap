@@ -42,13 +42,13 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  ß  |  =  |  {  |  }  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  ?  |  `  |  [  |  ]  | "|" |  ~   |
+// |  TAB |  !  |  "  |  § |  $  |  %  |   |  &  |  /  |  (  |  )  |  =  | BKSP |
+// | CTRL |     |     |     |     |     |   |    |  ´  |  {  |  }  |  #  |  <   |
+// | SHFT |     |     |     |     |     |   |  ?  |  `  |  [  |  ]  | "|" |  >   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp RA(N8)  &kp RA(N9)  &kp BSLH &kp GRAVE
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp RA(PLUS)  &kp EQUAL &kp RA(N8)  &kp RA(N9)  &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp RA(N5)  &kp RA(N6) &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
