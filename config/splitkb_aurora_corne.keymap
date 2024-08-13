@@ -9,30 +9,17 @@
 #include <dt-bindings/zmk/bt.h>
 
 
- / {
-    macros {
-        l_bracket: macro_0 {
-            label = "Left Bracket";
-            bindings = <&kp RALT>, <&kp 8>;
-        };
-        r_bracket: macro_1 {
-            label = "Right Bracket";
-            bindings = <&kp RALT>, <&kp 9>;
-        };
-        l_curly_brace: macro_2 {
-            label = "Left Curly Brace";
-            bindings = <&kp RALT>, <&kp 7>;
-        };
-        r_curly_brace: macro_3 {
-            label = "Right Curly Brace";
-            bindings = <&kp RALT>, <&kp 0>;
-        };
-    };
-};
 / {
         keymap {
                 compatible = "zmk,keymap";
 
+		
+        macros {
+           l_bracket: macro_0 {
+         	label = "Left Bracket";
+            	bindings = <&kp RALT>, <&kp 8>;
+	   };
+	};
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
