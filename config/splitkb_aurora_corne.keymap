@@ -12,7 +12,7 @@
     macros {
         backslash_macro: macro_0 {
             label = "Backslash Macro";
-            bindings = <&kp RALT>, <&kp MINS>;
+            bindings = <&kp RALT>, <&kp MINUS>;
         };
     };
 };
