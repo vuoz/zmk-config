@@ -13,6 +13,8 @@
         backslash_macro: macro_0 {
             label = "Backslash Macro";
             bindings = <&kp RALT &kp MINUS>;
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-macro";
         };
     };
 };
