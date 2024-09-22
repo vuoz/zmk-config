@@ -22,7 +22,7 @@
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LCTRL
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp DE_COMMA &kp DE_DOT &kp DE_MINUS &kp LCTRL
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
@@ -35,7 +35,7 @@
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp SEMI   &kp SQT   &kp LBKT &kp MINUS    &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp DE_O_UMLAUT   &kp DE_A_UMLAUT   &kp DE_U_UMLAUT &kp DE_SHARP_S    &trans &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -43,13 +43,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  "  |  § |  $  |  %  |   |  &  |  /  |  (  |  )  |  =  | BKSP |
-// | CTRL |     |     |     |     |     |   |  \  |  ` |  {  |  }  |  #  |  <   |
+// | CTRL |     |  '  |     |     |     |   |  \  |  ` |  {  |  }  |  #  |  <   |
 // | SHFT |     |     |     |     |     |   |  ?  |  +  |  [  |  ]  | "|" |  >   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &kp PIPE &trans   &trans   &trans      &kp RA(LS(N7)) &kp PLUS &kp RA(N8)  &kp RA(N9)  &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp RBKT  &kp RA(N5)  &kp RA(N6) &kp RA(N7) &kp RA(L)
+   &kp  TAB  &kp DE_EXCEL &kp DE_DQT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp DE_FLSH  &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &kp BSPC
+   &kp LCTRL &trans   &kp PIPE &kp DE_EURO   &trans   &trans      &kp DE_BACKSLASH &kp DE_GRAVE &kp DE_LEFT_BRACE  &kp DE_RIGHT_BRACE  &kp BSLH &kp DE_LESS_THAN
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp DE_QMARK &kp DE_PLUS  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET &kp DE_PIPE &kp DE_AT
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
