@@ -17,9 +17,10 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "ESC_CTRL";
                 #binding-cells = <2>;
-                tapping-term-ms = <130>;  
-                quick-tap-ms = <80>;      
+                tapping-term-ms = <180>;  
+                quick-tap-ms = <120>;      
                 flavor = "tap-preferred";   
+                global-quick-tap;
                 bindings = <&kp>, <&kp>;  
             };
         };
