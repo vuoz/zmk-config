@@ -16,17 +16,17 @@
                 compatible = "zmk,keymap";
 	
         behaviors {
-    esc_ctrl: esc_ctrl {
-        compatible = "zmk,behavior-hold-tap";
-        label = "ESC_CTRL";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;  
-        quick-tap-ms = <0>;      
-        flavor = "tap-preferred"; m
-        bindings = <&kp>, <&kp>;  
-    };
-};
-                default_layer {
+            esc_ctrl: esc_ctrl {
+                compatible = "zmk,behavior-hold-tap";
+                label = "ESC_CTRL";
+                #binding-cells = <2>;
+                tapping-term-ms = <200>;  
+                quick-tap-ms = <0>;      
+                flavor = "tap-preferred";   
+                bindings = <&kp>, <&kp>;  
+            };
+        };
+        default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
