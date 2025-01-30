@@ -12,9 +12,6 @@
 
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
-	
         behaviors {
             esc_ctrl: esc_ctrl {
                 compatible = "zmk,behavior-hold-tap";
@@ -26,6 +23,11 @@
                 bindings = <&kp>, <&kp>;  
             };
         };
+
+        keymap {
+                compatible = "zmk,keymap";
+	
+
         default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
