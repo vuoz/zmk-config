@@ -17,9 +17,9 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "ESC_CTRL";
                 #binding-cells = <2>;
-                tapping-term-ms = <200>;  
-                quick-tap-ms = <0>;      
-                flavor = "tap-preferred";   
+                tapping-term-ms = <250>;  
+                quick-tap-ms = <200>;      
+                flavor = "balanced";   
                 bindings = <&kp>, <&kp>;  
             };
         };
