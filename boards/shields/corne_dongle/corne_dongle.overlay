@@ -2,10 +2,10 @@
 #include <layouts/foostan/corne/6column.dtsi>
 
 
-&foostan_corne_6col_layout {
-    transform = <&default_transform>;
-};
 / {
+    &foostan_corne_6col_layout {
+        transform = <&default_transform>;
+    };
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &foostan_corne_6col_layout;
