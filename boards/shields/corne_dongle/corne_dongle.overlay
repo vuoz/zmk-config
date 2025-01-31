@@ -2,8 +2,13 @@
 #include <layouts/foostan/corne/6column.dtsi>
 
 
+
+    
+
+
+
 / {
-    &foostan_corne_6col_layout {
+    foostan_corne_6col_layout {
         transform = <&default_transform>;
     };
     chosen {
