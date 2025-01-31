@@ -22,7 +22,7 @@ include:
   - board: seeeduino_xiao_ble
     snippet: studio-rpc-usb-uart
     shield: corne_dongle 
-    cmake-args:  -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_STUDIO=y
+    cmake-args:  -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_BLE_PASSKEY_ENTRY=n
 
 
   - board: nice_nano_v2
