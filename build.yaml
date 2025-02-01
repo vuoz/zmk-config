@@ -21,7 +21,8 @@ include:
 
   - board: seeeduino_xiao_ble
     shield: corne_dongle 
-    cmake-args:  -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_BLE_PASSKEY_ENTRY=n
+    snippet: zmk-usb-logging  
+    cmake-args:  -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_SPLIT=y  -DCONFIG_ZMK_BLE_PASSKEY_ENTRY=n
 
 
   - board: nice_nano_v2
