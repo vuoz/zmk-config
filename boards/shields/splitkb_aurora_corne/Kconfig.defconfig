@@ -1,4 +1,4 @@
-if SHIELD_CORNE_DONGLE
+if SHIELD_SPLITKB_AURORA_CORNE_DONGLE
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
     default "Aurora Dongle"
