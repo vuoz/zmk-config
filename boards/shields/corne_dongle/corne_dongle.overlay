@@ -2,7 +2,7 @@
 #include <layouts/foostan/corne/6column.dtsi>
 
 &foostan_corne_6col_layout {
-    transform = <&dongle_transform>;
+    transform = <&aurora_transform>;
 };
 / {
     chosen {
@@ -17,7 +17,7 @@
         events = <0>;
     };
 
-    dongle_transform: keymap_transform_dongle {
+    aurora_transform: keymap_transform_aurora {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <4>;
