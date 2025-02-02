@@ -2,7 +2,7 @@
 #include <layouts/foostan/corne/6column.dtsi>
 
 &foostan_corne_6col_layout {
-    transform = <&aurora_custom_transform>;
+    transform = <&default_transform>;
 };
 / {
     chosen {
@@ -18,7 +18,7 @@
     };
 
   
-    aurora_custom_transform: keymap_transform_aurora {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <4>;
