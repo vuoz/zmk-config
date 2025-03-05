@@ -28,6 +28,16 @@
                 bindings = <&kp>, <&kp>;  
             };
         };
+        combos {
+            compatible = "zmk,combos";
+    
+            fourth_layer_combo {
+                key-positions = <37 40>;  
+                timeout-ms = <50>;         
+                layers = <0>;               
+                bindings = <&mo 3>;         
+            };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -71,6 +81,16 @@
    &kp LCTRL &kp RA(N)   &kp PIPE &kp DE_EURO   &kp RA(CARET)   &trans      &kp RA(LS(N7)) &kp DE_GRAVE &kp RA(N8)  &kp RA(N9)  &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &studio_unlock     &kp DE_QMARK &kp DE_PLUS  &kp RA(N5)  &kp RA(N6) &kp RA(N7) &kp RA(L)
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
+          
+                function_layer {
+
+                        bindings = <
+                            &kp  TAB  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &trans &trans &trans &trans &trans &kp BSPC
+                            &kp LCTRL &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &trans &trans &trans &trans &trans &trans
+                            &kp LSHFT &kp F11 &kp F12 &kp F13 &trans  &trans       &trans &trans &trans &trans &trans &trans
+                                                      &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
         };
