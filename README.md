@@ -2,6 +2,9 @@
 ### Zmk Config
 
 This repo contains my config for the aurora corne by splitkb.com
+### Info
+Check out the dongle branch => [here](https://github.com/vuoz/zmk-config/tree/dongle), if you want to use your zmk keyboard with a dongle.
+
 
 
 ### Assembled
