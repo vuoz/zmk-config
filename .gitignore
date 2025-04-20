@@ -1,1 +1,10 @@
 .DS_Store
+.west
+zmk
+zephyr/*
+!zephyr/module.yml
+modules
+.venv
+build
+
+
